@@ -94,30 +94,3 @@ function cuadrosRandom() {  //Para seleccionar una casilla o cuadro aleatoriamen
         alert("Este espacio ya no esta disponible");    //Enviar una alerta para indicar que no esta disponible la casilla o cuadro
     }
 }
-
-def morse():
-    global palabra
-
-    while len(palabra) != 0:
-        if len(palabra) > 0:
-            cuatro = palabra[:4]
-            tres = palabra[:3]
-            dos = palabra[:2]
-            uno = palabra[:1]
-            if cuatro in inverso_codigo_morse:
-                caracter4 =  inverso_codigo_morse[cuatro]
-                conversion.append(caracter4)
-                palabra = palabra[4:]
-            elif tres in inverso_codigo_morse:
-                caracter3 = inverso_codigo_morse[tres]
-                conversion.append(caracter3)
-                palabra = palabra[3:]
-            elif dos in inverso_codigo_morse:
-                caracter2 = inverso_codigo_morse[dos]
-                conversion.append(caracter2)
-                palabra = palabra[2:]
-            elif uno in inverso_codigo_morse:
-                caracter1 = inverso_codigo_morse[uno]
-                conversion.append(caracter1)
-                palabra = palabra[1:]
-
